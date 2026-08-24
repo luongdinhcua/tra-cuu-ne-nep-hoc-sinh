@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0c9d9a">
+  <title>Tra cứu nề nếp học sinh</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
+  
+<style>
+:root{
+  --teal:#0c9d9a;--teal-dark:#08757d;--navy:#0b4358;--gold:#f3c84b;
+  --cream:#fff7d7;--coral:#e9543e;--bg:#f3f8f8;--card:#fff;
+  --line:#dce8ea;--text:#173f4d;--muted:#66808a;--soft:#e8f6f4;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.hidden{display:none!important}
+.wrap{width:min(760px,calc(100% - 20px));margin:10px auto 28px}
+.hero{background:linear-gradient(135deg,var(--teal),var(--teal-dark) 55%,var(--navy));color:#fff;border-radius:18px;padding:18px 17px}
+.hero h1{margin:0;font-size:20px;line-height:1.25;font-weight:850}
+.hero p{margin:6px 0 0;color:rgba(255,255,255,.88);font-size:13px;line-height:1.45}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-top:10px;box-shadow:0 8px 24px rgba(13,67,84,.07)}
+.grid2{display:grid;grid-template-columns:1fr;gap:11px}
+label{display:block;margin-bottom:6px;color:#456572;font-size:13px;font-weight:800}
+input,select,textarea{width:100%;min-height:46px;border:1px solid #cddfe2;border-radius:12px;background:#fff;color:var(--text);padding:10px 12px;font-size:16px;outline:none}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(12,157,154,.10)}
+button{min-height:44px;border:0;border-radius:11px;padding:10px 13px;font-weight:800;cursor:pointer}
+button:active{transform:scale(.985)}
+.primary{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff}
+.soft{background:var(--soft);color:#096671}
+.danger{background:#fff0ed;color:#cc4734}
+.gold{background:var(--cream);color:#675315}
+.actions{display:grid;grid-template-columns:1fr;gap:8px}
+#loginCard .primary{width:100%}
+.status{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--cream);border:1px solid #ecd575;border-radius:14px;padding:11px 12px;margin-bottom:10px}
+.status strong{color:var(--navy);font-size:14px}
+.pill{flex:none;display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border-radius:999px;background:#fff;color:#0a6d72;font-weight:850;font-size:11px;white-space:nowrap}
+.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:#fff}
+table{width:100%;border-collapse:collapse;min-width:720px}
+th{position:sticky;top:0;z-index:2;background:var(--navy);color:#fff;padding:10px 8px;font-size:12px;text-align:center}
+td{padding:9px;border-bottom:1px solid #e7eef0;font-size:13px;vertical-align:middle}
+tbody tr:nth-child(even){background:#fbfdfd}
+td.name{font-weight:800;color:#0f4252}
+.empty{text-align:center;padding:28px 14px;color:var(--muted)}
+.modal{position:fixed;inset:0;z-index:50;display:flex;align-items:flex-end;justify-content:center;padding:12px;background:rgba(7,38,52,.52);backdrop-filter:blur(2px)}
+.modalCard{width:min(520px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:18px;padding:16px;box-shadow:0 22px 60px rgba(7,38,52,.28)}
+.modalCard h3{margin:0 0 13px;color:var(--navy);font-size:18px}
+.toast{position:fixed;left:10px;right:10px;bottom:10px;z-index:80;background:#fff;border:1px solid var(--line);border-left:5px solid var(--teal);padding:11px 12px;border-radius:12px;box-shadow:0 14px 34px rgba(7,63,89,.18);font-size:13px;font-weight:650}
+
+@media(max-width:680px){
+  .wrap{width:calc(100% - 14px);margin:7px auto 20px}
+  .hero{border-radius:15px;padding:16px 15px}
+  .hero h1{font-size:19px}
+  .hero p{font-size:12.5px}
+  .card{padding:11px;border-radius:14px;margin-top:8px;box-shadow:0 4px 14px rgba(13,67,84,.05)}
+  #portalCard>.card:first-child{position:sticky;top:0;z-index:20}
+  .actions{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .actions button{padding:9px 7px;font-size:12px}
+  #loginCard .actions{grid-template-columns:1fr}
+  .modalCard .actions{grid-template-columns:1fr 1fr}
+  .tableWrap{border:0;border-radius:0;overflow:visible;background:transparent}
+  table{min-width:0;width:100%}
+  thead{display:none}
+  tbody{display:grid;gap:9px}
+  tbody tr{display:block;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#fff!important;box-shadow:0 3px 12px rgba(13,67,84,.04)}
+  tbody td{display:grid;grid-template-columns:92px minmax(0,1fr);align-items:start;gap:8px;padding:8px 10px;border-bottom:1px solid #edf2f3;font-size:13px;line-height:1.4;text-align:left!important}
+  tbody td:last-child{border-bottom:0}
+  tbody td::before{content:attr(data-label);color:var(--muted);font-size:11.5px;font-weight:800}
+  tbody td.name{font-size:14px}
+  tbody td[data-label="Yêu cầu"]{display:block;padding:9px 10px 10px}
+  tbody td[data-label="Yêu cầu"]::before{display:none}
+  tbody td[data-label="Yêu cầu"] button{width:100%;min-height:42px;font-size:12.5px}
+  tbody td.empty{display:block;padding:24px 12px}
+  tbody td.empty::before{display:none}
+  .status{align-items:flex-start}
+  .modal{padding:8px}
+  .modalCard{border-radius:18px 18px 12px 12px}
+}
+@media(min-width:681px){
+  .grid2{grid-template-columns:1fr 1fr}
+  .actions{display:flex;flex-wrap:wrap}
+  .modal{align-items:center}
+  .toast{left:auto;right:14px;bottom:14px;max-width:380px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
+
+.hero-title-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.hero-favicon{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 3px 10px rgba(0,0,0,.12);
+  background:#fff;
+}
+@media(max-width:680px){
+  .hero-favicon{width:38px;height:38px;flex-basis:38px}
+}
+
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="hero-title-row">
+      <img class="hero-favicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAJhElEQVR42u3dPXIUVxTF8ekuhSJnJ84phd4AhFCwCWI2gQuHZgMOXc69E3IphwhDqSQ0Pf3x7sfvH9llJNPv3XPuua97pk8nAAAAAAAAAAAAAABQhckS1OT608evW//Ouzfv1AsDQFWBMwgGAEJnDAwABM8QGAAIniEwABA9M2AAIHpmwABA9MyAAYDomQEDAOEzAgZA9GAGDIDwwQgYAOGDETAAwgcjYACED0YQlNkSEL/9lACgUKQBBkD4YAQMgPDBCJwBED/UgQRgwyENSADED/XBAGwu1IkRwIbCSCABED/UDwOweVBHRgAbFoqvf/27XaG8emFBC44EE/ETOXPoawIT8RM7U+hrAhPxEzxD6GsCE/ETPTPoawIT4RM9M+hrBBPxEz0z6GsCE/ETPiPoawIT8RM9M+hrAhPxEz4j6GsCE/ETPiPoawIT8RM+I+hrAjPxE39Gsqx39PqdLB7hSwN9k8CV8iH8KnvhE4uFRoDI3Z/47UuVep4sFuEbC/qOAjPxE7800Le+Z4tD/Eygb51PFoXwjQR9xwGvByd++9mYEAYQrfsrFibQpe4ni0D4RoK+o8BM/MQvDfRtgs4AiN++OwPo2/0VARPonAJm4gcT6GsCM/EDfU1gttlA37o41AAidH/iR/T6OFInM/EDfU1gtqlA33o5xABGd3/if5y7fz5bhKB1c4Rurmwi4X//5+ublxbmgfqp/FVjuyeAiq/trtr1pYF47K2f0glA918ucGmgVwrY9VNII7s/8W/T2RnBT2IZaAJ7fWJwJn7i3/PnJcrYevJeAMI3FnRONbo/4RsL+o4CpR4EIv7Ppf4/6ixhAhjV/TuLf6QgO6eBUUlgyxTgDIDwnQ84A9D9CV8i6JgC0p8BEL+/n/oLkAB0f8LqmgYyp4DUZwAdxJ+5o3Y5H8j8qLCvBSd+19GYTUaAEfG/cvevLJjKaWBEClg7BqQcAaqKv0OnrDwWZBwFVo8APu9P/K53YKJaqb90CaBa9+8shIppIFsK8CQg4TOCxqwaAY6O/1W6P/HXXpej63SNDiUABS4NNCaNAWTu/oTfzwiynAVcPAI4/Sd+6xeHS/VoBFC40oARQPwnfEbQcQy4aAQQ/4nfOtcYA8IngAzdX0FKA1lTgDMAwmcEjVn8SSIP/xB+6Bgc0AiOTgBLPiEY+vsAiB8V9ifyGGsEIHxjQWMYAOEzgsYsGgGOnP8jxCbiZ+IZ63mJTiUAwpcGjAAgfEZgBAjCiPhP/My+w1h7n7PvF1ad/wkfR6aBI58JOOd5gCubv37zmUgP8RoBQPzWnwF0m5MUn32oWt8SAPHbDwkAis2+MIBH8AUgQD7O0a0EoMvYHwkgBpXf+AtErHMJAJAAADAAAAwAAAMA0N0APAMA5OUp/YZJAG4BohNR6t0IABgBAHTEdwIezLM//7j4Z29fv3WdkAA6in+Ln3edYABJRZFFHF2ukwEAcAaA+t3YXM4A0FT4938nIzACAGAA6NL9j/z9YAAAGAAABgCAAQBgAAAYAAAGAIABAEhuANOrF3YDbYhS708awN2bd5PtWs9Wz9BHfxa/y3Vm4Sn9GgESiSOLKLpcZwV8GjBph3SdKHUGAIABADACAD+4++/3s//s9W9/W7CsBjC9euENQVgk+Id+9suHH//+/P2zcNcX6Za3BIASwn+MLx9uwxpBmjMAzwJgb+HvIf77RvDdDNqs6xm6lQBQquNLBDskAKCC+B8yAgYQDJ8JIP7KJhCtvo0AaCd8I4ERAMRvJFhiAO4EoKr4K5rAuXoNmQCcA6AiEevaCIAW3f/cGb/bKMAA0Eb8TGClARx5DmAMIP49Ov8oEziynpfoVAJAWR4Tu6cAGQAadP+nzOEpI+gwCoQ2AGMAtu7+I9JA5DpebACeB0D07r9U1L/689lSwFJ9GgEWcn3z0iIU6Pzdon5aAzAG6P6jxb/GIKLX70UG0H0MkAJ0/grxP80IENFFmQDxV0ivzgCKmcDeL+SI9sIP9/QHGYC7AZJApPl/7+4ffVy4VI9pEkDkOHV98zKUEdy+frt5p97jd67t5JHn/iyH174RSBo479qeeF/Dz9/Ff6mQn79/drZAHfoFOAM4egxwS7Ael3xYJ7r4j67TNTp0CIgw4j9H4Dp/oATgLAB7zfwP/fcM4s9Wn6sNwN0AbC3+h/6czr+P/lIeAnqJaH3xrxG+dHrwCDAiBRgF6ot/DR2i/xa6cwiIcqJ06NfEAKQAJhBB/JnrcDMDcBgo3o8W6Z7ij3YWsZXe0o8AUoAkMDL2Z6+/TQ1gVApgAr1NoJv4t9SZQ0CkNgEHfsEMQApwDlBNxA9dV4XuXy4BMIFeScDcH9QARt4RYAI5U8BSQR8l/vvXM7K+9tCVMwCkSwLm/gQGIAVIAWtN4L7Qv3y4PVT81bv/6XQ67S7S608fv45aNB8YyjXTRzayiuIvPwJIAnlTAPEnHwEijAJgAtn/3nvrp/whoBRATFnn/hIJIEIKYALIWDdH6Ga2mZACes39QwwgwlkAE2ACWcR/lF4OF+XI24LfcXtwLJFuEUac+Y9sli2fBJQEpIGo4i87AkQaBZgAE4gq/sPftjXqQiOMAsaBfiNBpI/2RmiOQ7sxE8BRRvBY4ugs/tPJ24H/LwImEGcs2NIIfjVqGAMHJ4BIKUASqJEMzj1biCT+oZ+cjbAAkUyAEdRPe5EYfSg+WwTRkPj71r1vBGIC9tMZQAyijQJGAsKvnnpni6J7EH/fOp8tDhMg/r71HfbbeqKOA0YCwq/U3GaLJQ0Qf9969iTgymKTBgg/9dpF/wtGHgWMBYSfPc3OFk8XIv6+9ZvmK7uzJAFpgPAzNa9U39mfyQQYQe+ElSa5ZiuEbCbACPqNVplehpPyrT0ZTYAZ1BZ9RvGnNYDsJsAI6gk/o/hTG0AFE2AGde6eZH0HZokXd1Yxgi5mUOmWafaX35Z5c28lE6hoBhWfk6jw5utSr+6uaAJZDaH6g1FVXns/VduY6iYQ0RS6PQVZRfwlDaCjCRxhDh51rif+sgbACED45zHbNKBvHc02D+hbP63EYSQA4TdLANIA1AkDYAJQH91HACMBCL95ArDpUAcSgDQADYABMALCZwBgBITfFK8HVyz2UwKANED4DACMgPAZABgB4TMAMALCZwBgBkTPAMAICJ8BgBkQPQMAMyB6BgBmQPQMAMyA6BkAGALBMwAwBIJnAOhmDITOAFDYIAgcAAAAAAAAAAAAAMLzDTijhEPyuEXzAAAAAElFTkSuQmCC" alt="">
+      <div>
+        <h1>Đoàn trường THCS và THPT Lương Định Của</h1>
+        <p>Hệ thống tra cứu nề nếp của lớp</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="loginCard" class="card">
+    <div class="grid2">
+      <div>
+        <label>Lớp</label>
+        <select id="classSelect"><option value="">Đang tải danh sách lớp...</option></select>
+      </div>
+      <div>
+        <label>Mật khẩu lớp</label>
+        <input id="classPassword" type="password" autocomplete="current-password" enterkeyhint="go" placeholder="Nhập mật khẩu lớp">
+      </div>
+    </div>
+    <div class="actions" style="margin-top:12px">
+      <button class="primary" onclick="loginStudent()">Xem nề nếp</button>
+    </div>
+  </section>
+
+  <section id="portalCard" class="hidden">
+    <div class="card">
+      <div id="weekStatus" class="status"></div>
+      <div class="actions">
+        <button class="soft" onclick="refreshViolations()">Làm mới</button>
+        <button class="gold" onclick="openChangePassword()">Đổi mật khẩu lớp</button>
+        <button class="danger" onclick="logoutStudent()">Đăng xuất</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="tableWrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Ngày</th>
+              <th>Họ và tên</th>
+              <th>Vi phạm</th>
+              <th>Buổi</th>
+              <th>Ghi chú</th>
+              <th>Yêu cầu</th>
+            </tr>
+          </thead>
+          <tbody id="violationBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="correctionModal" class="modal hidden">
+  <div class="modalCard">
+    <h3>Yêu cầu chỉnh sửa vi phạm</h3>
+    <input type="hidden" id="reqRowNumber">
+    <div style="margin-bottom:10px">
+      <label>Lý do</label>
+      <select id="reqReason">
+        <option value="Sai họ tên">Sai họ tên</option>
+        <option value="Sai hình thức vi phạm">Sai hình thức vi phạm</option>
+        <option value="Sai ngày hoặc buổi">Sai ngày hoặc buổi</option>
+        <option value="Ghi nhầm học sinh">Ghi nhầm học sinh</option>
+        <option value="Khác">Khác</option>
+      </select>
+    </div>
+    <div>
+      <label>Nội dung đề nghị</label>
+      <textarea id="reqProposal" rows="4" placeholder="Mô tả nội dung cần kiểm tra/chỉnh sửa..."></textarea>
+    </div>
+    <div class="actions" style="margin-top:12px">
+      <button class="primary" onclick="submitCorrection()">Gửi yêu cầu</button>
+      <button class="soft" onclick="closeCorrection()">Hủy</button>
+    </div>
+  </div>
+</div>
+
+<div id="passwordModal" class="modal hidden">
+  <div class="modalCard">
+    <h3>Đổi mật khẩu lớp</h3>
+    <div class="grid2">
+      <div>
+        <label>Mật khẩu mới</label>
+        <input id="newPassword" type="password" autocomplete="new-password" placeholder="Ít nhất 6 ký tự">
+      </div>
+    </div>
+    <div style="margin-top:10px">
+      <label>Nhập lại mật khẩu mới</label>
+      <input id="confirmPassword" type="password">
+    </div>
+    <div class="actions" style="margin-top:12px">
+      <button class="primary" onclick="changePassword()">Đổi mật khẩu</button>
+      <button class="soft" onclick="closeChangePassword()">Hủy</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // DÁN LINK WEB APP SAU KHI DEPLOY APPS SCRIPT V3.
+  let WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxcA-WVrQVjqJWgm9IvkKJ79s0AImEmbp73cPw06Zr-84YYJWzEyUhfqayc4Sa6FBE7/exec";
+
+  let sessionClass = "";
+  let studentToken = "";
+  let currentWeek = null;
+  let currentViolations = [];
+
+  function toast(msg, error=false){
+    const old=document.querySelector('.toast'); if(old) old.remove();
+    const el=document.createElement('div'); el.className='toast';
+    if(error) el.style.borderLeftColor='#ff5940';
+    el.textContent=msg; document.body.appendChild(el);
+    setTimeout(()=>el.remove(),3200);
+  }
+
+  async function callApi(payload){
+    if(!WEB_APP_URL) throw new Error("Chưa cấu hình link Web App.");
+    const r=await fetch(WEB_APP_URL,{
+      method:'POST',
+      headers:{'Content-Type':'text/plain;charset=utf-8'},
+      body:JSON.stringify(payload)
+    });
+    const text=await r.text();
+    let data;
+    try{data=JSON.parse(text)}catch(_){throw new Error("Phản hồi máy chủ không hợp lệ.");}
+    return data;
+  }
+
+  function renderClassOptions(classes){
+    document.getElementById('classSelect').innerHTML=
+      '<option value="">-- Chọn lớp --</option>'+
+      classes.map(c=>`<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
+  }
+
+  async function loadPortalInfo(){
+    if(!WEB_APP_URL){
+      document.getElementById('classSelect').innerHTML='<option value="">Chưa cấu hình Web App</option>';
+      return;
+    }
+
+    try{
+      const cached=JSON.parse(localStorage.getItem('nenep_student_classes_cache')||'null');
+      if(cached && Array.isArray(cached.classes) && Date.now()-Number(cached.time||0)<21600000){
+        renderClassOptions(cached.classes);
+      }
+    }catch(_){}
+
+    try{
+      const r=await fetch(WEB_APP_URL+'?action=student_portal_info&_='+Date.now());
+      const data=await r.json();
+      const classes=Array.isArray(data.classes)?data.classes:[];
+      try{localStorage.setItem('nenep_student_classes_cache',JSON.stringify({time:Date.now(),classes}));}catch(_){}
+      renderClassOptions(classes);
+    }catch(e){
+      document.getElementById('classSelect').innerHTML='<option value="">Không tải được danh sách lớp</option>';
+    }
+  }
+
+  document.getElementById('classPassword').addEventListener('keydown',e=>{
+    if(e.key==='Enter') loginStudent();
+  });
+
+  async function loginStudent(){
+    const className=document.getElementById('classSelect').value;
+    const password=document.getElementById('classPassword').value;
+    if(!className||!password) return toast('Vui lòng chọn lớp và nhập mật khẩu.',true);
+    try{
+      const data=await callApi({action:'student_login',className,password});
+      if(data.status!=='success') return toast(data.message||'Không thể đăng nhập.',true);
+      sessionClass=className; studentToken=String(data.studentToken||"");
+      currentWeek=data.currentWeek||null;
+      currentViolations=Array.isArray(data.violations)?data.violations:[];
+      document.getElementById('loginCard').classList.add('hidden');
+      document.getElementById('portalCard').classList.remove('hidden');
+      renderPortal(data.message||'');
+    }catch(e){toast(e.message,true)}
+  }
+
+  function renderPortal(message=''){
+    const status=document.getElementById('weekStatus');
+    if(!currentWeek){
+      status.innerHTML=`<div><strong>Lớp ${escapeHtml(sessionClass)}</strong><div style="font-size:12px;margin-top:3px">${escapeHtml(message||'Hiện không thuộc tuần học đang hoạt động.')}</div></div>`;
+    }else{
+      status.innerHTML=`<div><strong>Lớp ${escapeHtml(sessionClass)} • ${escapeHtml(currentWeek.displayName||('Tuần '+currentWeek.weekNum))}</strong><div style="font-size:12px;margin-top:3px">${formatDate(currentWeek.startDate)} – ${formatDate(currentWeek.endDate)}</div></div><span class="pill">${currentViolations.length} lượt</span>`;
+    }
+
+    const body=document.getElementById('violationBody');
+    if(!currentWeek){
+      body.innerHTML='<tr><td colspan="6" class="empty">Không có tuần học đang hoạt động.</td></tr>';
+      return;
+    }
+    if(!currentViolations.length){
+      body.innerHTML='<tr><td colspan="6" class="empty">Lớp chưa có vi phạm trong tuần hiện tại.</td></tr>';
+      return;
+    }
+    body.innerHTML=currentViolations.map(v=>`
+      <tr>
+        <td data-label="Ngày">${escapeHtml(v.date||'')}</td>
+        <td data-label="Họ và tên" class="name">${escapeHtml(v.name||'')}</td>
+        <td data-label="Vi phạm">${escapeHtml(v.violation||'')}</td>
+        <td data-label="Buổi">${escapeHtml(v.session||'')}</td>
+        <td data-label="Ghi chú">${escapeHtml(v.note||'')}</td>
+        <td data-label="Yêu cầu"><button class="soft" onclick="openCorrection(${Number(v.rowNumber)})">Yêu cầu chỉnh sửa</button></td>
+      </tr>`).join('');
+  }
+
+  async function refreshViolations(){
+    if(!sessionClass||!studentToken) return;
+    try{
+      const data=await callApi({action:'student_session_data',studentToken});
+      if(data.status!=='success'){
+        if(data.code==='STUDENT_SESSION_EXPIRED') logoutStudent();
+        return toast(data.message||'Không thể tải dữ liệu.',true);
+      }
+      currentWeek=data.currentWeek||null;
+      currentViolations=Array.isArray(data.violations)?data.violations:[];
+      renderPortal(data.message||'');
+      toast('Đã cập nhật dữ liệu mới nhất.');
+    }catch(e){toast(e.message,true)}
+  }
+
+  function logoutStudent(){
+    sessionClass='';studentToken='';currentWeek=null;currentViolations=[];
+    document.getElementById('classPassword').value='';
+    document.getElementById('portalCard').classList.add('hidden');
+    document.getElementById('loginCard').classList.remove('hidden');
+  }
+
+  function openCorrection(rowNumber){
+    document.getElementById('reqRowNumber').value=rowNumber;
+    document.getElementById('reqProposal').value='';
+    document.getElementById('correctionModal').classList.remove('hidden');
+  }
+  function closeCorrection(){document.getElementById('correctionModal').classList.add('hidden')}
+
+  async function submitCorrection(){
+    const rowNumber=Number(document.getElementById('reqRowNumber').value);
+    const reason=document.getElementById('reqReason').value;
+    const proposal=document.getElementById('reqProposal').value.trim();
+    if(!proposal) return toast('Vui lòng nhập nội dung đề nghị.',true);
+    try{
+      const data=await callApi({
+        action:'student_submit_correction',
+        studentToken,
+        rowNumber,reason,proposal
+      });
+      if(data.status!=='success') return toast(data.message||'Không gửi được yêu cầu.',true);
+      closeCorrection(); toast(data.message||'Đã gửi yêu cầu.');
+    }catch(e){toast(e.message,true)}
+  }
+
+  function openChangePassword(){
+    document.getElementById('newPassword').value='';
+    document.getElementById('confirmPassword').value='';
+    document.getElementById('passwordModal').classList.remove('hidden');
+  }
+  function closeChangePassword(){document.getElementById('passwordModal').classList.add('hidden')}
+
+  async function changePassword(){
+    const newPassword=document.getElementById('newPassword').value;
+    const confirmPassword=document.getElementById('confirmPassword').value;
+    if(newPassword.length<6) return toast('Mật khẩu mới phải có ít nhất 6 ký tự.',true);
+    if(newPassword!==confirmPassword) return toast('Hai mật khẩu mới chưa trùng nhau.',true);
+    try{
+      const data=await callApi({
+        action:'student_change_password',
+        studentToken,
+        newPassword
+      });
+      if(data.status!=='success') return toast(data.message||'Không đổi được mật khẩu.',true);
+      closeChangePassword();
+      toast(data.message||'Đã đổi mật khẩu lớp.');
+      logoutStudent();
+    }catch(e){toast(e.message,true)}
+  }
+
+  function formatDate(v){
+    const m=String(v||'').match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    return m?`${m[3]}/${m[2]}/${m[1]}`:String(v||'');
+  }
+  function escapeHtml(v){
+    return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  }
+
+  loadPortalInfo();
+</script>
+</body>
+</html>
